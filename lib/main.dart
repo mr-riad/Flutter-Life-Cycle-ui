@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lifecycle_ui/screens/home.dart';
 
 import 'screens/dispose_lifecycle.dart';
 
@@ -13,11 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: DisposeLifecycle()
+      home: HomePage()
     );
   }
 }
